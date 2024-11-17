@@ -1,0 +1,23 @@
+.container{
+    /* background-color: red; */
+    padding: 0.8rem 0.3rem;
+    height: auto;
+    display: flex;
+}
+.gdglogo{
+    display: flex;
+    width: 50%;
+    height: 2rem;
+    padding: 0.3rem;
+    background-color: blue;
+}
+.gdglogo img{
+    width: 100%;
+
+}
+.option{
+    width: 50%;
+    display: flex;
+    
+    /* background-color: black; */
+}
