@@ -4,30 +4,30 @@ function Dashboard() {
   return (
     <>
       <div className={Style.dashboardContainer}>
-        <div className={Style.dashboard}>
+        <div id={Style.participants} className={Style.dashboard}>
           <div>
             <img className={Style.dashboardIMG} src="/user.png"></img>
           </div>
-          <div className={Style.dashboardInner}>
-            <div>Total participants</div>
+          <div  className={Style.dashboardInner}>
+            <div><b>Total participants</b></div>
             <div>180</div>
           </div>
         </div>
-        <div className={Style.dashboard}>
+        <div id={Style.completions} className={Style.dashboard}>
           <div>
-            <img className={Style.dashboardIMG} src="/user.png"></img>
+            <img className={Style.dashboardIMG} src="/success.png"></img>
           </div>
           <div className={Style.dashboardInner}>
-            <div>Total participants</div>
+            <div><b>Total Completions</b></div>
             <div>180</div>
           </div>
         </div>
-        <div className={Style.dashboard}>
+        <div id={Style.goodies} className={Style.dashboard}>
           <div>
-            <img className={Style.dashboardIMG} src="/user.png"></img>
+            <img className={Style.dashboardIMG} src="/gift.png"></img>
           </div>
           <div className={Style.dashboardInner}>
-            <div>Total participants</div>
+            <div><b>Eligible for Goodies</b></div>
             <div>180</div>
           </div>
         </div>

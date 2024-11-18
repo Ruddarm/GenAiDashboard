@@ -1,0 +1,73 @@
+.dataContainer{
+    /* background-color: blue; */
+    /* overflow:hidden; */
+    padding: 1rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+    /* background-color: pink; */
+    padding: 0.5rem;
+}
+.inputbox h3{
+    margin: 0;
+}
+.inputbox input{
+    width: 95%;
+    border: none;
+    height: 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 0.5px solid gray;
+    background-color: rgb(250, 250, 250);
+}
+.inputbox input:focus{
+    /* background-color: black; */
+    border: 1.5px solid black;
+    outline:none;
+}
+.tableContainer{
+    /* background-color: brown; */
+    max-width: 100%;
+    padding: 0.5rem;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+table{
+    /* overflow-x: auto ; */
+    width: 80%;
+    min-width: 1020px;
+    overflow-x: auto;
+}
+table thead{
+    font-family:'Times New Roman', Times, serif;
+    /* background-color: pink; */
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    /* display: flex; */
+    
+}
+table thead td{
+    color: grey;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: black; */
+    /* width: 100%; */
+}
+table thead{
+    border-bottom: 1px solid black;
+    /* background-color: black; */
+}
+tr{
+    border-bottom: 1px solid black;
+
+}
