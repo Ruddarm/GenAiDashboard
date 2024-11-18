@@ -34,9 +34,9 @@
     padding: 0.5rem;
     overflow: auto;
     white-space: nowrap;
-    display: flex;
+    /* display: flex; */
     /* border: 1px solid red; */
-    justify-content: center;
+    /* justify-content: center; */
 }
 table{
     /* overflow-x: auto ; */
