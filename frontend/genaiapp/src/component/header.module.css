@@ -1,23 +1,53 @@
+::root{
+    --darkBackground:black,
+}
 .container{
-    /* background-color: red; */
     padding: 0.8rem 0.3rem;
-    height: auto;
     display: flex;
+    border-bottom:  1px solid black;
+    justify-content: space-between;
 }
 .gdglogo{
     display: flex;
-    width: 50%;
-    height: 2rem;
-    padding: 0.3rem;
-    background-color: blue;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: blue; */
 }
 .gdglogo img{
-    width: 100%;
-
+    width: 15rem;
+    height: 2rem;
 }
 .option{
-    width: 50%;
+    width: auto;
     display: flex;
-    
-    /* background-color: black; */
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: palegoldenrod; */
+    /* background-color: pink; */
+}
+.option a{
+    width: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0.5rem 1rem;
+
+}
+.option a img{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+}
+.option button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.option button img{
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0;
+    margin: 0;
 }

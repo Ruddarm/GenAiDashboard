@@ -5,11 +5,9 @@ const participantsSchema = mongoose.Schema(
         userName:String,
         userEmail:String,
         TotalBadage:Number,
-        rank:Number,
         status:Boolean,
         arcadeGames:Boolean,
         Eligible:Boolean
-        
     }
 
 )

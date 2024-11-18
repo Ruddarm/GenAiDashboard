@@ -12,10 +12,10 @@ function Header() {
           />
         </div>
         <div className={Style.option}>
-          <a>Instagram</a>
-          <a>linedin</a>
-          <a>google</a>
-          <button></button>
+          <a><img src="/google.png"/></a>
+          <a><img src="/linkedin.png"></img></a>
+          <a><img src="/instagram.png"/></a>
+          <button><img src="/night-mode.png"></img></button>
         </div>
       </div>
     </>
