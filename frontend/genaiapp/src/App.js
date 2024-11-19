@@ -5,13 +5,14 @@ import DataBoard from "./component/databoard";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import data from "./component/bvpgdggenai.participants"
 // import dotinv from 'dotenv'
 function App() {
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  const [Data, setData] = useState([]);
+  const [Data, setData] = useState(data);
   const getData = async () => {
-    let result = await axios.get(`${apiUrl}participants`);
-    ProcessData(result.data);
+    // let result = await axios.get(`${apiUrl}participants`);
+    ProcessData(data);
   };
   const ProcessData = (Data) => {
     setData(Data);

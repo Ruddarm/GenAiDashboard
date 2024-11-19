@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import Style from "./rowdata.module.css";
 function RowData({ data, index }) {
   console.log(data);
-  let iscompleted = data.TotalBadage>=15 && data.arcadeGames;
+  let iscompleted = data.TotalBadage >= 15 && data.arcadeGames;
   return (
     <>
       <tr>
@@ -10,27 +10,32 @@ function RowData({ data, index }) {
         <td>{data.userName}</td>
         <td>{data.TotalBadage}/15</td>
         <td>
-          <div className={Style.arcade}>{data.arcadeGames?"Yes":"No"}</div>
+          <div className={Style.arcade}>{data.arcadeGames ? "Yes" : "No"}</div>
         </td>
         <td>
-          <div className={iscompleted?Style.status:Style.incomplete}>
+          <div className={iscompleted ? Style.status : Style.incomplete}>
             {iscompleted ? (
               <div>
                 <img src="/whitechecked.png"></img>
                 Completed
               </div>
             ) : (
-              <div >
-              <img src="/remove.png"></img>
-              incomplete
-            </div>
+              <div>
+                <img src="/remove.png"></img>
+                incomplete
+              </div>
             )}
           </div>
         </td>
         <td>
           <div className={data.Eligible ? Style.eligible : Style.noteligible}>
-            <img src="/whitegift.png"></img>
-            {data.Eligible ? "Eligible" : "Not Eligible"}
+            {data.Eligible ? (
+              <>
+                <img src="/whitegift.png"></img> Eligible
+              </>
+            ) : (
+              <>Not Eligible</>
+            )}
           </div>
         </td>
         <td className={Style.profilelink}>

@@ -13,9 +13,9 @@ function Header() {
           />
         </div>
         <div className={Style.option}>
-          <a><img src="/google.png"/></a>
-          <a><img src="/linkedin.png"></img></a>
-          <a><img src="/instagram.png"/></a>
+          <a href="https://gdg.community.dev/gdg-on-campus-bharati-vidyapeeths-department-of-management-studies-navi-mumbai-india/"><img src="/google.png"/></a>
+          <a href="https://www.linkedin.com/company/google-developer-groups-on-campus-bvdu-dms-nm/"><img src="/linkedin.png"></img></a>
+          <a href="https://www.instagram.com/gdg_oc.bvdu.dms.nm?igsh=emllc2FyMXZ1bHVh"><img src="/instagram.png"/></a>
           {/* <button><img src="/night-mode.png"></img></button> */}
         </div>
       </div>
