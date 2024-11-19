@@ -1,8 +1,10 @@
 import react from "react";
 import Style from "./databoard.module.css";
 import RowData from "./rowdata";
-function DataBoard() {
+function DataBoard({participant}) {
+  // console.log(participant.participant[ 101])
   return (
+    
     <>
       <div className={Style.dataContainer}>
         <div className={Style.inputbox}>
@@ -12,7 +14,7 @@ function DataBoard() {
         <div  className={Style.tableContainer}>
           <table >
             <thead>
-              <td>Rank</td>
+              <td>Index</td>
               <td>Name</td>
               <td>Badges</td>
               <td>Arcade Games</td>
@@ -20,9 +22,11 @@ function DataBoard() {
               <td>Goodies</td>
               <td>Profile link</td>
             </thead>
-            <RowData></RowData>
-            <RowData></RowData>
-            <RowData></RowData>
+            <tbody>
+            {participant.map((data,index)=>(
+              <RowData key={index} index={index}  data={data}></RowData>
+            ))}
+            </tbody>
           </table>
         </div>
       </div>

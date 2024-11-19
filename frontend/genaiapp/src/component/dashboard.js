@@ -10,7 +10,7 @@ function Dashboard() {
           </div>
           <div  className={Style.dashboardInner}>
             <div><b>Total participants</b></div>
-            <div>180</div>
+            <div>194</div>
           </div>
         </div>
         <div id={Style.completions} className={Style.dashboard}>
@@ -19,7 +19,7 @@ function Dashboard() {
           </div>
           <div className={Style.dashboardInner}>
             <div><b>Total Completions</b></div>
-            <div>180</div>
+            <div>112</div>
           </div>
         </div>
         <div id={Style.goodies} className={Style.dashboard}>
@@ -28,7 +28,7 @@ function Dashboard() {
           </div>
           <div className={Style.dashboardInner}>
             <div><b>Eligible for Goodies</b></div>
-            <div>180</div>
+            <div>80</div>
           </div>
         </div>
       </div>

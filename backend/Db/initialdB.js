@@ -41,10 +41,44 @@ const readExcel = async (path) => {
       // console.log(row.values.slice(1))
     });
     await participantsModel.insertMany(Data);
-    console.log("Data saved")
+    console.log("Data saved");
   } catch (e) {
     console.log(e);
   }
 };
 
-readExcel(path.join(__dirname, "../Data/stdData.xlsx"));
+// readExcel(path.join(__dirname, "../Data/stdData.xlsx"));
+// Update eglibale
+const updateData = async (path) => {
+  try {
+    await main();
+    const workBook = new excelJS.Workbook();
+    await workBook.xlsx.readFile(path);
+    const sheet = workBook.getWorksheet(1);
+    Data = [];
+    sheet.eachRow((row, rowindex) => {
+      if (rowindex == 1) {
+        return;
+      }
+      const [userEmail] = row.values.slice(1);
+      Data.push(userEmail);
+      // console.log(row.values.slice(1))
+    });
+    Data.map(async (email, index) => {
+      await participantsModel.findOneAndUpdate(
+        {
+          userEmail: email,
+        },
+        { $set: { Eligible: true } }
+      );
+    });
+    console.log("Updated");
+
+    // await participantsModel.insertMany(Data);
+    // console.log(Data);
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+// updateData(path.join(__dirname, "../Data/elgibledata.xlsx"));

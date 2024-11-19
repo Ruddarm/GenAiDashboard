@@ -1,29 +1,30 @@
 import React, { PureComponent } from "react";
 import Style from "./rowdata.module.css";
-function RowData() {
+function RowData({ data, index }) {
+  console.log(data);
   return (
     <>
       <tr>
-        <td>1</td>
-        <td>Ruddarm Maurya</td>
-        <td>15/15</td>
+        <td>{index + 1}</td>
+        <td>{data.userName}</td>
+        <td>{data.TotalBadage}/15</td>
         <td>
           <div className={Style.arcade}>yes</div>
         </td>
-        <td >
+        <td>
           <div className={Style.status}>
             <img src="/whitechecked.png"></img>
             Completed
           </div>
         </td>
         <td>
-          <div className={Style.eligible}>
+          <div className={data.Eligible?Style.eligible:Style.noteligible} >
             <img src="/whitegift.png"></img>
-            Eligible
+            {data.Eligible?"Eligible":"Not Eligible"}
           </div>
         </td>
         <td className={Style.profilelink}>
-          <a href="">
+          <a href={data.profilelink.hyperlink}>
             <button>Profile link</button>
           </a>
         </td>
@@ -33,3 +34,17 @@ function RowData() {
 }
 
 export default RowData;
+// {
+//   "profilelink": {
+//       "text": "https://www.cloudskillsboost.google/public_profiles/5b8bbc0f-8a6b-4317-a47a-9dc57f279a40",
+//       "hyperlink": "https://www.cloudskillsboost.google/public_profiles/5b8bbc0f-8a6b-4317-a47a-9dc57f279a40"
+//   },
+//   "_id": "673c44f466f9fe14d21db110",
+//   "userName": "Sumeet Chandrakant Ghadge",
+//   "userEmail": "ghadgesumeet556@gmail.com",
+//   "TotalBadage": 12,
+//   "status": "No",
+//   "arcadeGames": true,
+//   "Eligible": false,
+//   "__v": 0
+// }
