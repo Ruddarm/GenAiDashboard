@@ -6,7 +6,6 @@ const participant = require("../Models/participants");
 
 dotenv.config();
 const app = express();
-app.use(corsOptions);
 
 DbOperation();
 
@@ -23,6 +22,9 @@ const corsOptions = {
     }
   },
 };
+
+app.use(corsOptions);
+
 
 app.listen(8080, () => {});
 
