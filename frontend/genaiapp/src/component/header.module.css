@@ -12,6 +12,7 @@
     width: auto;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 1rem;
     /* background-color: blue; */
 }
 .gdglogo img{
