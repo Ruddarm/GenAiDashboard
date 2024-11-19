@@ -6,7 +6,6 @@ const participant = require("../Models/participants");
 
 dotenv.config();
 const app = express();
-
 DbOperation();
 
 const allowedOrigins = [
