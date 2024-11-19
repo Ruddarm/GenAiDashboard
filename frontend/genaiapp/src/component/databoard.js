@@ -1,6 +1,6 @@
 import react from "react";
 import Style from "./databoard.module.css";
-
+import RowData from "./rowdata";
 function DataBoard() {
   return (
     <>
@@ -10,7 +10,7 @@ function DataBoard() {
           <input placeholder="Serach Participants.."></input>
         </div>
         <div  className={Style.tableContainer}>
-          <table>
+          <table >
             <thead>
               <td>Rank</td>
               <td>Name</td>
@@ -20,15 +20,9 @@ function DataBoard() {
               <td>Goodies</td>
               <td>Profile link</td>
             </thead>
-            <tr>
-              <td>1</td>
-              <td>Ruddarm Maurya</td>
-              <td>15/15</td>
-              <td>yes</td>
-              <td>Completed</td>
-              <td>eligilbe</td>
-              <td><button>Click</button></td>
-            </tr>
+            <RowData></RowData>
+            <RowData></RowData>
+            <RowData></RowData>
           </table>
         </div>
       </div>

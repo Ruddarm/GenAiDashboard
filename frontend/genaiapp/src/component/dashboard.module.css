@@ -19,28 +19,28 @@
 }
 #participants{
     background-color: #F0C594;
-    box-shadow: 1px 2px 4px #F0C594;
+    box-shadow: 1px 2px 12px #F0C594;
 }
 #participants:hover{
-    box-shadow: 1px 2px 10px #F0C594 ;
+    box-shadow: 1px 2px 18px #F0C594 ;
 }
 #completions
 {
 
     background-color: #87e79e;
-    box-shadow: 1px 2px 4px #87e79e;
+    box-shadow: 1px 2px 12px #87e79e;
 
 }
 #completions:hover{
-    box-shadow: 1px 2px 10px #87e79e;
+    box-shadow: 1px 2px 18px #87e79e;
 }
 #goodies{
     background-color: #ffcad4;
-    box-shadow: 1px 2px 4px #ffcad4;
+    box-shadow: 1px 2px 12px #ffcad4;
 
 }
 #goodies:hover{
-    box-shadow: 1px 2px 10px #ffcad4;
+    box-shadow: 1px 2px 18px #ffcad4;
 }
 .dashboardInner{
     padding: 1rem;

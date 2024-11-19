@@ -31,21 +31,29 @@
 .tableContainer{
     /* background-color: brown; */
     max-width: 100%;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
     overflow: auto;
     white-space: nowrap;
-    /* display: flex; */
+    display: flex;
     /* border: 1px solid red; */
     /* justify-content: center; */
 }
 table{
     /* overflow-x: auto ; */
     min-width: 1020px;
+    border-collapse: collapse;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 table thead{
     font-family:'Times New Roman', Times, serif;
     /* background-color: pink; */
-    padding: 0.5rem;
+    width: 100%;
+    /* display: flex; */
+    
+    padding: 1rem;
     border-bottom: 1px solid black;
     /* display: flex; */
     
@@ -56,12 +64,5 @@ table thead td{
     font-family: 'Times New Roman', Times, serif;
     /* background-color: black; */
     /* width: 100%; */
-}
-table thead{
-    border-bottom: 1px solid black;
-    /* background-color: black; */
-}
-tr{
-    border-bottom: 1px solid black;
 
 }

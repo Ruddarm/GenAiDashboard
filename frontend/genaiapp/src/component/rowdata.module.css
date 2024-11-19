@@ -1,0 +1,72 @@
+tr{
+    /* background-color: black; */
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+    font-family:serif;
+    font-weight: bold;
+    /* display: block; */
+    /* background-color: black; */
+
+}
+tr:hover{
+    background-color: white;
+}
+td{
+    /* display: flex; */
+    border-collapse: collapse;
+    /* border: 1px solid red; */
+    margin: 0;
+    /* display: flex; */
+    justify-content: center;
+    padding: 1.25rem;
+    align-items: center;
+    vertical-align: middle;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+}
+.arcade, .status , .eligible{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 0.25rem;
+    color: white;
+    width: max-content;
+    font-size: 1rem;
+    border-radius: 10px;
+    min-height: 2rem;
+    /* width: max-content; */
+    /* min-width: 2rem; */
+}
+.arcade{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+img{
+    width: 0.8rem;
+    height: 0.8rem;
+    /* margin: 0.2rem; */
+    margin: 0;
+    margin-right: 0.2rem;
+    /* background-color: green; */
+}
+.eligible{
+background-color: #e1788b;
+
+}
+
+button{
+    background-color: rgb(55, 55, 55);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.5rem;
+}
+button a{
+    text-decoration: none;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
