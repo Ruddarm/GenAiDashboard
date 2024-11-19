@@ -4,7 +4,7 @@ const cors = require("cors");
 const DbOperation = require("../Db/MongoOperation");
 const participant = require("../Models/participants");
 
-const allowedOrigins = ['https://your-frontend.netlify.app'];
+const allowedOrigins = ['https://gdg-on-bvp-dms.netlify.app/','http://localhost:3000'];
 const corsOptions = {
     origin: (origin, callback) => {
       if (!origin || allowedOrigins.includes(origin)) {
@@ -24,4 +24,7 @@ app.listen(8080, () => {});
 app.get('/',(req,res)=>{
     // console.log("Han sun raha hu bc")
     res.send("han sun raha hu bc")
+})
+app.get('/name',(req,res)=>{
+  res.send({name:"ruddarm"});
 })
