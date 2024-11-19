@@ -22,7 +22,7 @@ const corsOptions = {
   },
 };
 
-app.use(corsOptions);
+app.use(cors(corsOptions));
 
 
 app.listen(8080, () => {});
