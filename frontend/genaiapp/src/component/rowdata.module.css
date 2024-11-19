@@ -83,3 +83,17 @@ button:hover{
     background-color: white;
     color: black;
 }
+
+.incomplete{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 0.25rem;
+    color: white;
+    width: 7rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    min-height: 2rem;
+    background-color: grey;
+}
