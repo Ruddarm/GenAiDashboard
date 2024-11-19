@@ -4,8 +4,12 @@ const participantsSchema = mongoose.Schema(
     {
         userName:String,
         userEmail:String,
+        profilelink: {
+            text:String,
+            hyperlink:String
+        },
         TotalBadage:Number,
-        status:Boolean,
+        status:String,
         arcadeGames:Boolean,
         Eligible:Boolean
     }
