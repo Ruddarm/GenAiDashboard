@@ -10,9 +10,9 @@ const app = express();
 DbOperation();
 
 const allowedOrigins = [
-  "https://gdg-on-bvp-dms.netlify.app/",
+  "https://gdg-on-bvp-dms.netlify.app",
   "http://localhost:3000",
-];
+]
 const corsOptions = {
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin)) {
