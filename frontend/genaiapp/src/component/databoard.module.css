@@ -66,3 +66,8 @@ table thead td{
     /* width: 100%; */
 
 }
+@media (min-width :100px) and (max-width:601px) {
+    .tableContainer{
+        padding: 0.5rem;
+    }
+}

@@ -70,4 +70,10 @@
         
         width: 12rem;
     }
+    .option a{
+        margin:  0.3rem;
+    }
+    .option a img{
+        margin: 0;
+    }
 }
